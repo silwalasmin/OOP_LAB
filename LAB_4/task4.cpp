@@ -52,7 +52,7 @@ int main()
 {
     rectangular rect;
     polar pol;
-    pol = rect;
+    pol = rect; //pol.polar(rect);
     pol.showdata();
     return 0;
 }

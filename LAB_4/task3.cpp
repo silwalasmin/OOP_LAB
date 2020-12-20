@@ -12,7 +12,8 @@ private:
 public:
     polar()
     {
-        r = theta = 0;
+        r = 0;
+        theta = 0;
     }
     polar(float rad, float ang)
     {
@@ -48,7 +49,7 @@ int main()
 {
     polar pol;
     cartesian rect;
-    pol = rect;
+    pol = rect; //pol=rect.operator();
     pol.showdata();
     return 0;
 }

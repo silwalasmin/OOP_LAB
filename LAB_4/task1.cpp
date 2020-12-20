@@ -6,7 +6,8 @@ using namespace std;
 class ConvertDist
 {
 private:
-    float inch, feet;
+    float inch;
+    int feet;
 
 public:
     ConvertDist()
@@ -17,7 +18,6 @@ public:
     {
         float temp = meter * 3.2808;
         feet = (int)temp;
-
         inch = (temp - feet) * 12;
     }
     void showdata()
@@ -31,7 +31,7 @@ int main()
     float m;
     cout << "Enter distance in meter: ";
     cin >> m;
-    d1 = m;
+    d1 = m; //d.ConvertDist(m)
     d1.showdata();
     return 0;
 }

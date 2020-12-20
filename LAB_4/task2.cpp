@@ -24,7 +24,7 @@ int main()
     ConvertDist d1;
     float meter;
     d1.getdata();
-    meter = d1;
-    cout << "the distance in meters is " << meter;
+    meter = d1; //meter=d1.operator float()
+    cout << "the distance in meters is " << meter << endl;
     return 0;
 }
